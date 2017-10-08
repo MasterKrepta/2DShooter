@@ -12,7 +12,7 @@ public class GibOnTrigger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
  
-        Debug.Log("Hit");
+        
         if (explosion != null) {
             
             Instantiate(explosion, transform.position, Quaternion.identity);
