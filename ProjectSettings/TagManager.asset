@@ -40,12 +40,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
-  - name: Bullet
-    uniqueID: 1385531213
+  - name: PlayerBullet
+    uniqueID: 3435606069
     locked: 0
   - name: Player
     uniqueID: 1553898019
+    locked: 0
+  - name: EnemyBullet
+    uniqueID: 1258725571
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0

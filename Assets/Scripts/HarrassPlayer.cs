@@ -8,6 +8,8 @@ public class HarrassPlayer : MonoBehaviour {
     public float moveTime = 1.0f;
     public float waitTime = 1.0f;
     Transform player;
+    public bool remainNearInitPos = false;
+
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player").transform;

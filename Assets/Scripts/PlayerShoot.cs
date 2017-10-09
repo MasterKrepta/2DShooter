@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shoot : MonoBehaviour {
+public class PlayerShoot : MonoBehaviour {
 
     public Transform bullet;
     public float shotDelay = 0.2f;

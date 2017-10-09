@@ -12,7 +12,8 @@ public class GameOverOnDestroy : MonoBehaviour {
     }
 
     private void OnDestroy() {
-        
+        if(gm != null) {
             gm.gameOver = true;
+        }
     }
 }

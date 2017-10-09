@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4606721398276256}
   - component: {fileID: 212051858440532646}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: PlayerLaser Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4581767430441508}
   - component: {fileID: 212337387060750762}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: PlayerLaser Sprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,9 +56,10 @@ GameObject:
   - component: {fileID: 212877692604122886}
   - component: {fileID: 54481672974791174}
   - component: {fileID: 65247348345719502}
+  - component: {fileID: 65552756666197432}
   - component: {fileID: 114521866404207932}
-  m_Layer: 10
-  m_Name: PlayerLaser
+  m_Layer: 11
+  m_Name: EnemyLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1937722091532224}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -6.327656, y: -1.7458916, z: 0}
+  m_LocalPosition: {x: -7.426801, y: -2.1745906, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4606721398276256}
@@ -127,11 +128,23 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1937722091532224}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.36, y: 0.36, z: 0.53}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.06, y: 0, z: -0.06}
+  m_Center: {x: 0.1, y: 0, z: 0.25}
+--- !u!65 &65552756666197432
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1937722091532224}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: -0.06, y: 1, z: -0.06}
+  m_Center: {x: -0.1, y: 0, z: 0.25}
 --- !u!114 &114089458659744668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3abbed1cd5c8524989e6e95105be4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 45
+  speed: 5
 --- !u!114 &114521866404207932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -199,7 +212,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 69201bf735edf2b4c9a6e55c0dc6affa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 19fc5b5be034fec428f130df0e2eda7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -241,7 +254,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 69201bf735edf2b4c9a6e55c0dc6affa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 19fc5b5be034fec428f130df0e2eda7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -280,8 +293,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -859361227
-  m_SortingLayer: -3
+  m_SortingLayerID: 1258725571
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
